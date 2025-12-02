@@ -1,40 +1,41 @@
-/*  your css code here. If applicable */
-
+/* Root pseudo-class to set background color */
 :root {
     background-color: rgb(135, 206, 235);
 }
 
-p:first-child {
-    color: white;
+/* Article paragraphs */
+article p:first-child {
     background-color: black;
+    color: white;
 }
 
-p:nth-child(2) {
-    /* No specific styles needed unless you want to override */
+article p:nth-child(2) {
+    color: black; /* default */
 }
 
-p:last-child {
+article p:last-child {
     color: red;
 }
 
-ul {
-    list-style-type: none; /* Remove default bullet points */
-}
-
-li {
-    background-color: gray; /* Default color */
+/* Unordered list styling */
+ul li {
+    background-color: gray;
     width: 50%;
     padding: 10px;
 }
 
-li:nth-child(odd) {
-    background-color: white; /* Odd items */
+/* odd items = white background */
+ul li:nth-child(odd) {
+    background-color: white;
 }
 
-li:first-child, li:last-child {
+/* first and last items: font size 22px */
+ul li:first-child,
+ul li:last-child {
     font-size: 22px;
 }
 
-li:nth-last-child(3) {
+/* third-to-last item (3rd item) = pink background */
+ul li:nth-last-child(3) {
     background-color: pink;
 }
